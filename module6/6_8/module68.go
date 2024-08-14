@@ -90,6 +90,9 @@ func main() {
 	}
 
 	if operator > 0 {
-		fmt.Printf("Ваше выражение: %f %s %f = %f", firstOperand, string(operator), secondOperand, result)
+		fmt.Printf("Ваше выражение: %f %s %f = %f\n", firstOperand, string(operator), secondOperand, result)
 	}
+
+	fmt.Println("Нажмите Enter для завершения")
+	_, _ = reader.ReadString('\n')
 }
